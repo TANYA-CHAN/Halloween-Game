@@ -4,12 +4,12 @@ import math
 
 pygame.init()
 screen = pygame.display.set_mode((650, 500))
-bg = pygame.image.load('C:/Users/Tanya/Desktop/Halloween Hunt Game/halloween.jpg')
+bg = pygame.image.load('halloween.jpg')
 bg1=pygame.transform.scale(bg, (650, 500))
 pygame.display.set_caption("HAPPY HALLOWEEN!")
-icon=pygame.image.load("C:/Users/Tanya/Desktop/Halloween Hunt Game/hat.png")
+icon=pygame.image.load("hat.png")
 pygame.display.set_icon(icon)
-predator = pygame.image.load("C:/Users/Tanya/Desktop/Halloween Hunt Game/witch.png")
+predator = pygame.image.load("witch.png")
 x = 290
 y = 380
 xchange = 0
@@ -24,7 +24,7 @@ ypchange = []
 no_of_prey = 5
 
 for j in range(no_of_prey):
-    prey.append(pygame.image.load("C:/Users/Tanya/Desktop/Halloween Hunt Game/skeleton.png"))
+    prey.append(pygame.image.load("skeleton.png"))
     xp.append(random.randint(0, 628))
     yp.append(random.randint(5, 90))
     xpchange.append(1)
@@ -32,7 +32,7 @@ for j in range(no_of_prey):
 
 def prey1(x1, y1, j):
     screen.blit(prey[j], (x1, y1))
-web = pygame.image.load("C:/Users/Tanya/Desktop/Halloween Hunt Game/smoke.png")
+web = pygame.image.load("smoke.png")
 xweb=0
 yweb=380
 xwchange=0
